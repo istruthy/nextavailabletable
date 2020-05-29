@@ -16,7 +16,7 @@ function Nav() {
     <nav className={styles.navbar}>
       <div className={styles.navCenter}>
         <div className={styles.navHeader}>
-          yournextavailabletable.com
+          nextavailabletable.com
           <button type="button" className={styles.logoBtn} onClick={toggleNav}>
             <FaBars className={styles.logoIcon} />
           </button>
