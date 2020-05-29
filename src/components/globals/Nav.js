@@ -1,31 +1,43 @@
-import React from "react"
+import React, { useState } from "react"
 import styled from "styled-components"
+import { FaBars } from "react-icons/fa"
+
+import styles from "../../css/nav.module.css"
+import links from "../../constants/links"
 
 function Nav() {
-  return (
-    <NavWrapper>
-      <nav className="nav">
-        <ul className="nav__links">
-          <li>
-            <a href="#about" className="nav__single-link">
-              about
-            </a>
-          </li>
-          <li>
-            <a href="#pricing" className="nav__single-link">
-              pricing
-            </a>
-          </li>
-          <li>
-            <a href="#signup" className="nav__single-link">
-              signup
-            </a>
-          </li>
-        </ul>
+  const [isOpen, setNav] = useState(false)
 
-        <div className="nav__logo">nextavailabletable.com</div>
-      </nav>
-    </NavWrapper>
+  const toggleNav = () => {
+    setNav(isOpen => !isOpen)
+  }
+
+  return (
+    <nav className={styles.navbar}>
+      <div className={styles.navCenter}>
+        <div className={styles.navHeader}>
+          yournextavailabletable.com
+          <button type="button" className={styles.logoBtn} onClick={toggleNav}>
+            <FaBars className={styles.logoIcon} />
+          </button>
+        </div>
+        <ul
+          className={
+            isOpen
+              ? `${styles.navLinks} ${styles.showNav}`
+              : `${styles.navLinks}`
+          }
+        >
+          {links.map((item, index) => {
+            return (
+              <li key={index}>
+                <a href="#">{item.text}</a>
+              </li>
+            )
+          })}
+        </ul>
+      </div>
+    </nav>
   )
 }
 
