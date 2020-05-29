@@ -84,6 +84,7 @@ const AboutWrapper = styled.section`
 
   .about-card__icon {
     margin-bottom: 0.75rem;
+    font-size: 4.25rem;
   }
 
   .about-card__text {
@@ -130,9 +131,6 @@ const AboutWrapper = styled.section`
   @media (min-width: 768px) {
     .about-card {
       flex: 0 0 calc(33% - 1rem);
-    }
-    .about-card__icon {
-      font-size: 4.25rem;
     }
   }
 `
