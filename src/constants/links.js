@@ -4,7 +4,11 @@ export default [
     text: "about",
   },
   {
-    path: "#pricing",
+    path: "#processes",
+    text: "how it works",
+  },
+  {
+    path: "#prices",
     text: "prices",
   },
   {
