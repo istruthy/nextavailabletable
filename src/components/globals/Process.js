@@ -1,6 +1,10 @@
 import React from "react"
 import styled from "styled-components"
 
+import imageOne from "../../images/tim-mossholder-sxb8StmTfaw-unsplash.jpg"
+import imageTwo from "../../images/thom-holmes-J2e34-1CVVs-unsplash.jpg"
+import imageThree from "../../images/jenny-smith-SwgJLK96fMw-unsplash.jpg"
+
 function Process() {
   return (
     <SectionWrapper>
@@ -64,17 +68,17 @@ const SectionWrapper = styled.section`
   }
 
   .process_img-one {
-    background: url("./images/tim-mossholder-sxb8StmTfaw-unsplash.jpg")
+    background: url("${imageOne}")
       center/cover no-repeat;
   }
 
   .process_img-two {
-    background: url("./images/thom-holmes-J2e34-1CVVs-unsplash.jpg")
+    background: url("${imageTwo}")
       center/cover no-repeat;
   }
 
   .process_img-three {
-    background: url("./images/jenny-smith-SwgJLK96fMw-unsplash.jpg")
+    background: url("${imageThree}")
       center/cover no-repeat;
   }
 
@@ -90,7 +94,7 @@ const SectionWrapper = styled.section`
   }
 
   .process__info-text {
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-weight: 300;
     line-height: 1.5;
   }

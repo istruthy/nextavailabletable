@@ -1,5 +1,6 @@
 import React from "react"
 import styled from "styled-components"
+import backgroundImage from "../../images/empty-tables-inside-a-cafe-3910126.jpg"
 
 function Banner() {
   return (
@@ -24,8 +25,8 @@ const BannerWrapper = styled.header`
     align-items: center;
     /* for the rest of the elements*/
     background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-      url("../../images/empty-tables-inside-a-cafe-3910126.jpg") center/cover
-        fixed no-repeat;
+      url("${backgroundImage}") center/cover fixed
+        no-repeat;
     position: relative;
   }
 

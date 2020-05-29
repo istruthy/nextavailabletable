@@ -1,5 +1,6 @@
 import React from "react"
 import styled from "styled-components"
+import { FaRegCheckCircle } from "react-icons/fa"
 
 function Price() {
   return (
@@ -17,14 +18,14 @@ function Price() {
             <ul className="pricing-card__list">
               <li className="pricing-card__item">
                 <span className="pricing-card__icon">
-                  <span className="lnr lnr-checkmark-circle"></span>
+                  <FaRegCheckCircle className="pricingCardIcon" />
                 </span>
                 <p className="pricing-card__text">one location</p>
               </li>
 
               <li className="pricing-card__item">
                 <span className="pricing-card__icon">
-                  <span className="lnr lnr-checkmark-circle"></span>
+                  <FaRegCheckCircle className="pricingCardIcon" />
                 </span>
                 <p className="pricing-card__text">
                   6 different time allocations
@@ -33,14 +34,14 @@ function Price() {
 
               <li className="pricing-card__item">
                 <span className="pricing-card__icon">
-                  <span className="lnr lnr-checkmark-circle"></span>
+                  <FaRegCheckCircle />
                 </span>
                 <p className="pricing-card__text">60 reservations per day</p>
               </li>
 
               <li className="pricing-card__item">
                 <span className="pricing-card__icon">
-                  <span className="lnr lnr-checkmark-circle"></span>
+                  <FaRegCheckCircle className="pricingCardIcon" />
                 </span>
                 <p className="pricing-card__text">set capacity limits</p>
               </li>
@@ -58,14 +59,14 @@ function Price() {
             <ul className="pricing-card__list">
               <li className="pricing-card__item">
                 <span className="pricing-card__icon">
-                  <span className="lnr lnr-checkmark-circle"></span>
+                  <FaRegCheckCircle className="pricingCardIcon" />
                 </span>
                 <p className="pricing-card__text">3 locations</p>
               </li>
 
               <li className="pricing-card__item">
                 <span className="pricing-card__icon">
-                  <span className="lnr lnr-checkmark-circle"></span>
+                  <FaRegCheckCircle className="pricingCardIcon" />
                 </span>
                 <p className="pricing-card__text">
                   600 reservations per location
@@ -74,21 +75,21 @@ function Price() {
 
               <li className="pricing-card__item">
                 <span className="pricing-card__icon">
-                  <span className="lnr lnr-checkmark-circle"></span>
+                  <FaRegCheckCircle className="pricingCardIcon" />
                 </span>
                 <p className="pricing-card__text">custom text response</p>
               </li>
 
               <li className="pricing-card__item">
                 <span className="pricing-card__icon">
-                  <span className="lnr lnr-checkmark-circle"></span>
+                  <FaRegCheckCircle className="pricingCardIcon" />
                 </span>
                 <p className="pricing-card__text">set capacity limits</p>
               </li>
 
               <li className="pricing-card__item">
                 <span className="pricing-card__icon">
-                  <span className="lnr lnr-checkmark-circle"></span>
+                  <FaRegCheckCircle className="pricingCardIcon" />
                 </span>
                 <p className="pricing-card__text">custom url</p>
               </li>
@@ -106,28 +107,28 @@ function Price() {
             <ul className="pricing-card__list">
               <li className="pricing-card__item">
                 <span className="pricing-card__icon">
-                  <span className="lnr lnr-checkmark-circle"></span>
+                  <FaRegCheckCircle className="pricingCardIcon" />
                 </span>
                 <p className="pricing-card__text">unlimited locations</p>
               </li>
 
               <li className="pricing-card__item">
                 <span className="pricing-card__icon">
-                  <span className="lnr lnr-checkmark-circle"></span>
+                  <FaRegCheckCircle className="pricingCardIcon" />
                 </span>
                 <p className="pricing-card__text">no time allocation limits</p>
               </li>
 
               <li className="pricing-card__item">
                 <span className="pricing-card__icon">
-                  <span className="lnr lnr-checkmark-circle"></span>
+                  <FaRegCheckCircle className="pricingCardIcon" />
                 </span>
                 <p className="pricing-card__text">no reservation limit</p>
               </li>
 
               <li className="pricing-card__item">
                 <span className="pricing-card__icon">
-                  <span className="lnr lnr-checkmark-circle"></span>
+                  <FaRegCheckCircle className="pricingCardIcon" />
                 </span>
                 <p className="pricing-card__text">set capacity limits</p>
               </li>

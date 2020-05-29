@@ -1,5 +1,6 @@
 import React from "react"
 import styled from "styled-components"
+import { FaMobileAlt, FaStoreAlt, FaRegSmileBeam } from "react-icons/fa"
 
 function About() {
   return (
@@ -8,7 +9,7 @@ function About() {
         <div className="flexbox-parent flexbox-parent--medium">
           <article className="about-card">
             <div className="about-card__icon">
-              <span className="lnr lnr-smartphone"></span>
+              <FaMobileAlt />
             </div>
             <h3 className="about-card__title">text</h3>
             <p className="about-card__text">
@@ -19,7 +20,7 @@ function About() {
 
           <article className="about-card">
             <div className="about-card__icon">
-              <span className="lnr lnr-store"></span>
+              <FaStoreAlt />
             </div>
             <h3 className="about-card__title">manage</h3>
             <p className="about-card__text">
@@ -30,7 +31,7 @@ function About() {
 
           <article className="about-card">
             <div className="about-card__icon">
-              <span className="lnr lnr-smile"></span>
+              <FaRegSmileBeam />
             </div>
 
             <h3 className="about-card__title">easy</h3>
@@ -129,6 +130,9 @@ const AboutWrapper = styled.section`
   @media (min-width: 768px) {
     .about-card {
       flex: 0 0 calc(33% - 1rem);
+    }
+    .about-card__icon {
+      font-size: 4.25rem;
     }
   }
 `
