@@ -27,11 +27,11 @@ function Intro() {
         <div className="flexbox-parent">
           <article className="intro item-margin flexbox-parent--medium">
             <div className="intro__photo">
-              <img
+              {/* <img
                 src="./images/man-using-gray-iphone-6-212288.jpg"
                 alt=""
                 className="intro__photo-img"
-              />
+              /> */}
 
               <Img fluid={aboutImage.childImageSharp.fluid} alt="landscape" />
             </div>
@@ -108,7 +108,7 @@ const SectionWrapper = styled.section`
       flex: 0 0 calc(50% - 0.5rem);
     }
     .intro__info-link {
-      width: 100%;
+      width: 80%;
     }
 
     .intro__info {
