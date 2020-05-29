@@ -34,18 +34,12 @@ const NavWrapper = styled.nav`
 
   .nav {
     background: var(--light);
-    /* position: absolute;
-    top: 0;
-    left: 0; */
     justify-content: space-between;
     align-content: center;
-
     margin: 0 auto;
   }
   .nav__header {
     display: flex;
-    /* justify-content: space-between; */
-    /* padding: 0.25rem 1rem; */
     border-bottom: 0.5rem solid var(--dark);
   }
 
@@ -69,7 +63,8 @@ const NavWrapper = styled.nav`
     /* transition: all 1s linear */
   }
   .nav__single-link:hover {
-    background: var(--light);
+    background: var(--grey);
+    color: var(--black);
     padding-left: 1.5rem;
     cursor: pointer;
   }
@@ -125,11 +120,12 @@ const NavWrapper = styled.nav`
     }
     .nav__single-link {
       background: transparent;
+      color: var(--black);
       flex: 1 0 100px;
     }
     .nav__single-link:hover {
       padding-left: 1rem;
-      color: var(--grey);
+      color: var(--black);
     }
   }
 `

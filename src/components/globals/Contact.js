@@ -111,7 +111,7 @@ const SectionWrapper = styled.section`
   }
 
   .contact__submit:hover {
-    background: var(--yellow);
+    background: var(--white);
     color: var(--black);
   }
 
@@ -122,11 +122,6 @@ const SectionWrapper = styled.section`
   }
 
   .contact__subtext-right {
-    /* font-weight: 200;
-  line-height: 0.8;
-  font-size: 1rem;
-  color: var(--white);
-  line-height: 1.5; */
     width: 100%;
   }
 
