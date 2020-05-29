@@ -1,7 +1,26 @@
 import React from "react"
 import styled from "styled-components"
 
+import { graphql, useStaticQuery } from "gatsby"
+import Img from "gatsby-image"
+
+const getAbout = graphql`
+  query aboutImage {
+    aboutImage: file(
+      relativePath: { eq: "man-using-gray-iphone-6-212288.jpg" }
+    ) {
+      childImageSharp {
+        fluid(maxWidth: 600) {
+          ...GatsbyImageSharpFluid_tracedSVG
+        }
+      }
+    }
+  }
+`
+
 function Intro() {
+  const { aboutImage } = useStaticQuery(getAbout)
+
   return (
     <SectionWrapper>
       <section className="intro section-padding" id="intro">
@@ -13,6 +32,8 @@ function Intro() {
                 alt=""
                 className="intro__photo-img"
               />
+
+              <Img fluid={aboutImage.childImageSharp.fluid} alt="landscape" />
             </div>
             <div className="intro__info">
               <div className="intro__info-title">

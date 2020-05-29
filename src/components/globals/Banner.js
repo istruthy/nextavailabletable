@@ -24,8 +24,8 @@ const BannerWrapper = styled.header`
     align-items: center;
     /* for the rest of the elements*/
     background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-      url("./images/empty-tables-inside-a-cafe-3910126.jpg") center/cover fixed
-        no-repeat;
+      url("../../images/empty-tables-inside-a-cafe-3910126.jpg") center/cover
+        fixed no-repeat;
     position: relative;
   }
 
