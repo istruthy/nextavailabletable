@@ -1,0 +1,10 @@
+type Contact {
+  email: String!
+  zipcode: String!
+  name: String!
+}
+
+type Query {
+  allContacts: [Contact!]!
+}
+

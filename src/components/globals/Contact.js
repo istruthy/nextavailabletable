@@ -1,7 +1,9 @@
 import React, { useState } from "react"
 import styled from "styled-components"
+import axios from "axios"
 
 function Contact() {
+  const [submitted, setSubmitted] = useState(false)
   const [values, setValues] = useState({
     email: "",
     name: "",
@@ -14,47 +16,76 @@ function Contact() {
     console.log("state ", values)
   }
 
+  const handleSubmit = async event => {
+    event.preventDefault()
+    console.log("here in handleSumit")
+
+    await axios.post("/api/create-contact", values)
+    setValues({
+      email: "",
+      name: "",
+      zipcode: "",
+    })
+    setSubmitted(true)
+  }
+
   return (
     <SectionWrapper>
       <section className="contact section-padding" id="contact">
         <div className="flexbox-parent flexbox-parent--medium">
           <article className="contact__item  item-margin ">
-            <form className="contact__form">
-              <div className="contact__title">notify me</div>
-              <input
-                type="email"
-                name="email"
-                id=""
-                className="contact__input"
-                autocomplete="off"
-                placeholder="email address"
-                onChange={handleChange}
-                value={values.email}
-              />
-              <input
-                type="name"
-                name="name"
-                id=""
-                className="contact__input"
-                autocomplete="off"
-                placeholder="store name"
-                onChange={handleChange}
-                value={values.name}
-              />
-              <input
-                type="zipcode"
-                name="zipcode"
-                id=""
-                className="contact__input"
-                autocomplete="off"
-                placeholder="zipcode"
-                onChange={handleChange}
-                value={values.zipcode}
-              />
-              <button type="submit" className="contact__submit">
-                submit
-              </button>
-            </form>
+            {!submitted && (
+              <form className="contact__form" onSubmit={handleSubmit}>
+                <div className="contact__title">notify me</div>
+                <input
+                  required
+                  type="email"
+                  name="email"
+                  id=""
+                  className="contact__input"
+                  autocomplete="off"
+                  placeholder="email address"
+                  onChange={handleChange}
+                  value={values.email}
+                />
+                <input
+                  required
+                  type="name"
+                  name="name"
+                  id=""
+                  className="contact__input"
+                  autocomplete="off"
+                  placeholder="store name"
+                  onChange={handleChange}
+                  value={values.name}
+                />
+                <input
+                  required
+                  type="zipcode"
+                  name="zipcode"
+                  id=""
+                  className="contact__input"
+                  autocomplete="off"
+                  placeholder="zipcode"
+                  onChange={handleChange}
+                  value={values.zipcode}
+                />
+                <button type="submit" className="contact__submit">
+                  submit
+                </button>
+              </form>
+            )}
+            {submitted && (
+              <div className="thankYou">
+                <div className="thankYou__item">
+                  <h3 className="thankYou__title">Thank you</h3>
+                  <p className="thankYou__text">
+                    You've been added to the list.
+                  </p>
+                  <div className="thankYou__social"></div>
+                </div>
+              </div>
+            )}
           </article>
 
           <article className="contact__item item-margin">
@@ -75,6 +106,25 @@ const SectionWrapper = styled.section`
 
   .contact {
     background: var(--blue);
+  }
+
+  .thankYou {
+    display: flex;
+    justify-items: stretch;
+    border-radius: 2.25rem;
+    background: var(--white);
+    padding: 3rem;
+    height: 100%;
+  }
+  .thankYou__title {
+    color: var(--black);
+    font-size: 4rem;
+  }
+
+  .thankYou__text {
+    color: var(--black);
+    font-size: 2rem;
+    line-height: 1.5;
   }
 
   .contact__item {

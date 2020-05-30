@@ -12,7 +12,7 @@ export default [
     text: "prices",
   },
   {
-    path: "#signup",
+    path: "#contact",
     text: "signup",
   },
 ]
