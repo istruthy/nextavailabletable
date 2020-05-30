@@ -19,7 +19,7 @@ function Contact() {
     event.preventDefault()
     console.log("here in handleSumit")
     try {
-      await axios.post(".netlify/functions/create-contact", values)
+      await axios.post("/.netlify/functions/create-contact", values)
       setValues({
         email: "",
         name: "",
