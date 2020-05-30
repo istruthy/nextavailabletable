@@ -1,7 +1,19 @@
-import React from "react"
+import React, { useState } from "react"
 import styled from "styled-components"
 
 function Contact() {
+  const [values, setValues] = useState({
+    email: "",
+    name: "",
+    zipcode: "",
+  })
+
+  const handleChange = event => {
+    const { name, value } = event.target
+    setValues({ ...values, [name]: value })
+    console.log("state ", values)
+  }
+
   return (
     <SectionWrapper>
       <section className="contact section-padding" id="contact">
@@ -11,27 +23,33 @@ function Contact() {
               <div className="contact__title">notify me</div>
               <input
                 type="email"
-                name=""
+                name="email"
                 id=""
                 className="contact__input"
                 autocomplete="off"
                 placeholder="email address"
+                onChange={handleChange}
+                value={values.email}
               />
               <input
                 type="name"
-                name=""
+                name="name"
                 id=""
                 className="contact__input"
                 autocomplete="off"
                 placeholder="store name"
+                onChange={handleChange}
+                value={values.name}
               />
               <input
                 type="zipcode"
-                name=""
+                name="zipcode"
                 id=""
                 className="contact__input"
                 autocomplete="off"
                 placeholder="zipcode"
+                onChange={handleChange}
+                value={values.zipcode}
               />
               <button type="submit" className="contact__submit">
                 submit

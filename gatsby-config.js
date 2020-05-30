@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `Next Available Table`,
     description: `Helping you fill your tables with predictability and ease.`,
-    author: `@gatsbyjs`,
+    author: `Next Available Table`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
