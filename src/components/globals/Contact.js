@@ -13,20 +13,22 @@ function Contact() {
   const handleChange = event => {
     const { name, value } = event.target
     setValues({ ...values, [name]: value })
-    console.log("state ", values)
   }
 
   const handleSubmit = async event => {
     event.preventDefault()
     console.log("here in handleSumit")
-
-    await axios.post("/api/create-contact", values)
-    setValues({
-      email: "",
-      name: "",
-      zipcode: "",
-    })
-    setSubmitted(true)
+    try {
+      await axios.post("/api/create-contact", values)
+      setValues({
+        email: "",
+        name: "",
+        zipcode: "",
+      })
+      setSubmitted(true)
+    } catch (e) {
+      console.log("error ", e)
+    }
   }
 
   return (
