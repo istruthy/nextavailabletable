@@ -44,7 +44,7 @@ function Intro() {
                 to manage your capacity to keep within the guidelines of local
                 regulations.
               </p>
-              <a href="#" className="intro__info-link">
+              <a href="#signup" className="intro__info-link">
                 sign up today
               </a>
             </div>
