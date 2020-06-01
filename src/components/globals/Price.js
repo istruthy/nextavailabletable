@@ -1,5 +1,6 @@
 import React from "react"
 import styled from "styled-components"
+import prices from "../../constants/prices"
 import { FaRegCheckCircle } from "react-icons/fa"
 
 function Price() {
@@ -7,133 +8,28 @@ function Price() {
     <SectionWrapper>
       <section className="prices section-padding" id="prices">
         <div className="flexbox-parent flexbox-parent--medium">
-          <article className="pricing-card">
-            <h3 className="pricing-card__title">
-              $0/<span>free</span>
-            </h3>
-            <p className="pricing-card__info">
-              Find out how easy it to provide your customers the ability to
-              reserve there next table.
-            </p>
-            <ul className="pricing-card__list">
-              <li className="pricing-card__item">
-                <span className="pricing-card__icon">
-                  <FaRegCheckCircle className="pricingCardIcon" />
-                </span>
-                <p className="pricing-card__text">one location</p>
-              </li>
-
-              <li className="pricing-card__item">
-                <span className="pricing-card__icon">
-                  <FaRegCheckCircle className="pricingCardIcon" />
-                </span>
-                <p className="pricing-card__text">
-                  6 different time allocations
-                </p>
-              </li>
-
-              <li className="pricing-card__item">
-                <span className="pricing-card__icon">
-                  <FaRegCheckCircle />
-                </span>
-                <p className="pricing-card__text">60 reservations per day</p>
-              </li>
-
-              <li className="pricing-card__item">
-                <span className="pricing-card__icon">
-                  <FaRegCheckCircle className="pricingCardIcon" />
-                </span>
-                <p className="pricing-card__text">set capacity limits</p>
-              </li>
-            </ul>
-          </article>
-
-          <article className="pricing-card">
-            <h3 className="pricing-card__title">
-              $26/<span>month</span>
-            </h3>
-            <p className="pricing-card__info">
-              More flexibility and additional locations with a custom message
-              response
-            </p>
-            <ul className="pricing-card__list">
-              <li className="pricing-card__item">
-                <span className="pricing-card__icon">
-                  <FaRegCheckCircle className="pricingCardIcon" />
-                </span>
-                <p className="pricing-card__text">3 locations</p>
-              </li>
-
-              <li className="pricing-card__item">
-                <span className="pricing-card__icon">
-                  <FaRegCheckCircle className="pricingCardIcon" />
-                </span>
-                <p className="pricing-card__text">
-                  600 reservations per location
-                </p>
-              </li>
-
-              <li className="pricing-card__item">
-                <span className="pricing-card__icon">
-                  <FaRegCheckCircle className="pricingCardIcon" />
-                </span>
-                <p className="pricing-card__text">custom text response</p>
-              </li>
-
-              <li className="pricing-card__item">
-                <span className="pricing-card__icon">
-                  <FaRegCheckCircle className="pricingCardIcon" />
-                </span>
-                <p className="pricing-card__text">set capacity limits</p>
-              </li>
-
-              <li className="pricing-card__item">
-                <span className="pricing-card__icon">
-                  <FaRegCheckCircle className="pricingCardIcon" />
-                </span>
-                <p className="pricing-card__text">custom url</p>
-              </li>
-            </ul>
-          </article>
-
-          <article className="pricing-card">
-            <h3 className="pricing-card__title">
-              $0.05/<span>reservation</span>
-            </h3>
-            <p className="pricing-card__info">
-              More flexibility and additional locations with a custom message
-              response
-            </p>
-            <ul className="pricing-card__list">
-              <li className="pricing-card__item">
-                <span className="pricing-card__icon">
-                  <FaRegCheckCircle className="pricingCardIcon" />
-                </span>
-                <p className="pricing-card__text">unlimited locations</p>
-              </li>
-
-              <li className="pricing-card__item">
-                <span className="pricing-card__icon">
-                  <FaRegCheckCircle className="pricingCardIcon" />
-                </span>
-                <p className="pricing-card__text">no time allocation limits</p>
-              </li>
-
-              <li className="pricing-card__item">
-                <span className="pricing-card__icon">
-                  <FaRegCheckCircle className="pricingCardIcon" />
-                </span>
-                <p className="pricing-card__text">no reservation limit</p>
-              </li>
-
-              <li className="pricing-card__item">
-                <span className="pricing-card__icon">
-                  <FaRegCheckCircle className="pricingCardIcon" />
-                </span>
-                <p className="pricing-card__text">set capacity limits</p>
-              </li>
-            </ul>
-          </article>
+          {prices.map(price => {
+            return (
+              <article className="pricing-card">
+                <h3 className="pricing-card__title">
+                  ${price.price}/<span>{price.price_description}</span>
+                </h3>
+                <p className="pricing-card__info">{price.description}</p>
+                <ul className="pricing-card__list">
+                  {price.info.map(item => {
+                    return (
+                      <li className="pricing-card__item">
+                        <span className="pricing-card__icon">
+                          <FaRegCheckCircle className="pricingCardIcon" />
+                        </span>
+                        <p className="pricing-card__text">{item}</p>
+                      </li>
+                    )
+                  })}
+                </ul>
+              </article>
+            )
+          })}
         </div>
       </section>
     </SectionWrapper>
