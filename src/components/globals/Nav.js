@@ -30,7 +30,9 @@ function Nav() {
           {links.map((item, index) => {
             return (
               <li key={index}>
-                <a href={item.path}>{item.text}</a>
+                <a href={item.path} onClick={toggleNav}>
+                  {item.text}
+                </a>
               </li>
             )
           })}

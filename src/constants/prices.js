@@ -30,7 +30,7 @@ export default [
       "Find out how easy it to provide your customers the ability to reserve there next table.",
     info: [
       "unlimited locations",
-      "unlimited texts",
+      "unlimited reservations",
       "set your seating compacity limits",
     ],
   },

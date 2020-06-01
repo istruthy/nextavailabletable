@@ -81,9 +81,7 @@ function Contact() {
               <div className="thankYou">
                 <div className="thankYou__item">
                   <h3 className="thankYou__title">Thank you</h3>
-                  <p className="thankYou__text">
-                    You've been added to the list.
-                  </p>
+                  <p className="thankYou__text"></p>
                   <div className="thankYou__social"></div>
                 </div>
               </div>
@@ -91,7 +89,7 @@ function Contact() {
           </article>
 
           <article className="contact__item item-margin">
-            <div className="contact__title-right">We’re launching soon</div>
+            <div className="contact__title-right">we’re launching soon</div>
             <div className="contact__subtext-right">
               Sign-up to get notified when <span>nextavailabletable</span> is
               ready to launch
@@ -113,20 +111,24 @@ const SectionWrapper = styled.section`
   .thankYou {
     display: flex;
     justify-items: stretch;
-    border-radius: 2.25rem;
+    border-radius: 1.25rem;
     background: var(--white);
     padding: 3rem;
     height: 100%;
+    justify-content: center;
   }
   .thankYou__title {
     color: var(--black);
-    font-size: 4rem;
+    font-size: 2rem;
+    line-height: 1.5;
+    text-align: center;
   }
 
   .thankYou__text {
     color: var(--black);
-    font-size: 2rem;
+    font-size: 1rem;
     line-height: 1.5;
+    text-align: center;
   }
 
   .contact__item {
@@ -139,11 +141,10 @@ const SectionWrapper = styled.section`
     background: transparent;
     border: none;
     border-bottom: 0.05rem solid var(--white);
-    font-size: 2rem;
+    font-size: 1.3rem;
     padding: 0.25rem 0;
     color: var(--grey);
     outline: none;
-
     margin: 0.75rem 0;
   }
   .contact__input::placeholder {
@@ -154,7 +155,7 @@ const SectionWrapper = styled.section`
 
   .contact__title,
   .contact__title-right {
-    font-size: 2rem;
+    font-size: 2.3rem;
     font-weight: 600;
     margin-bottom: 2rem;
     color: var(--white);
@@ -205,17 +206,26 @@ const SectionWrapper = styled.section`
   @media (min-width: 768px) {
     .contact__title-right {
       width: 69%;
-      font-size: 4rem;
+      font-size: 3rem;
     }
     .contact__subtext-right {
-      font-size: 2rem;
+      font-size: 1.3rem;
+      line-height: 1.5;
       width: 69%;
       color: var(--white);
     }
 
     .contact__subtext-right span {
       color: var(--grey);
-      font-size: 2rem;
+      font-size: 1.8rem;
+    }
+
+    .thankYou__title {
+      font-size: 3rem;
+    }
+
+    .thankYou {
+      border-radius: 2.25rem;
     }
   }
 `

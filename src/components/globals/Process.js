@@ -13,8 +13,7 @@ function Process() {
           <article className="progress__item flexbox-parent--medium">
             <div className="process__info">
               <h1 className="process__info-title">
-                Provide your QR Code, text short number or link from your
-                website
+                Provide your QR Code or link from your website
               </h1>
               <p className="process__info-text">
                 Your customers will have several ways they can get their next
@@ -26,10 +25,10 @@ function Process() {
 
             <div className="process__info">
               <h1 className="process__info-title">
-                Customers arrive at there reserved time
+                Customers arrive at their reserved time
               </h1>
               <p className="process__info-text">
-                15 minutes prior to there seating time your customer will
+                15 minutes prior to their seating time your customer will
                 receive a reminder. They can cancel or reschedule to another
                 available time.
               </p>
@@ -39,12 +38,13 @@ function Process() {
 
             <div className="process__info">
               <h1 className="process__info-title">
-                Your customer will get a confirmation that there table will be
-                ready
+                Your customer will get a confirmation that their table will be
+                ready at a specfic time
               </h1>
               <p className="process__info-text">
                 If the time and seats are available they will get a confirmation
-                text. Those seats will be removed from your available seating.
+                text and those seats will be removed from your available
+                seating.
               </p>
             </div>
 
