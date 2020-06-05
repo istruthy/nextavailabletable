@@ -37,8 +37,7 @@ function Process() {
 
             <div className="process__info">
               <h1 className="process__info-title">
-                Your customers will get a confirmation that their table will be
-                ready
+                Your customers get a confirmation that their table will be ready
               </h1>
               <p className="process__info-text">
                 If the time and seats are available customers will get a
