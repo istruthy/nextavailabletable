@@ -5,7 +5,7 @@ import Banner from "../components/globals/Banner"
 import Intro from "../components/globals/Intro"
 import About from "../components/globals/About"
 import Process from "../components/globals/Process"
-import Price from "../components/globals/Price"
+// import Price from "../components/globals/Price"
 import Contact from "../components/globals/Contact"
 
 import "./layout.css"
@@ -18,7 +18,7 @@ const Layout = ({ children }) => {
       <Intro />
       <About />
       <Process />
-      <Price />
+      {/* <Price /> */}
       <Contact />
       {children}
     </>
