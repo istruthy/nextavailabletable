@@ -45,7 +45,7 @@ function Contact() {
                   name="email"
                   id=""
                   className="contact__input"
-                  autocomplete="off"
+                  autoComplete="off"
                   placeholder="email address"
                   onChange={handleChange}
                   value={values.email}
@@ -56,7 +56,7 @@ function Contact() {
                   name="name"
                   id=""
                   className="contact__input"
-                  autocomplete="off"
+                  autoComplete="off"
                   placeholder="store name"
                   onChange={handleChange}
                   value={values.name}
@@ -67,7 +67,7 @@ function Contact() {
                   name="zipcode"
                   id=""
                   className="contact__input"
-                  autocomplete="off"
+                  autoComplete="off"
                   placeholder="zipcode"
                   onChange={handleChange}
                   value={values.zipcode}
