@@ -13,8 +13,8 @@ function About() {
             </div>
             <h3 className="about-card__title">text</h3>
             <p className="about-card__text">
-              Your customer can simply text their table time and request to get
-              a confirmation.
+              Your customers can simply text their table time and number of
+              guests request to get a confirmation.
             </p>
           </article>
 
@@ -24,8 +24,7 @@ function About() {
             </div>
             <h3 className="about-card__title">manage</h3>
             <p className="about-card__text">
-              One or many locations from an easy to use interface from our app
-              or dashboard.
+              One or many locations from an easy to use dashboard.
             </p>
           </article>
 
@@ -36,8 +35,8 @@ function About() {
 
             <h3 className="about-card__title">easy</h3>
             <p className="about-card__text">
-              You and your customer will love how easy and convenient ensuring
-              they have a place at the table
+              You and your customers will love how easy and convenient it is to
+              ensure they have a table when they arrive.
             </p>
           </article>
         </div>
