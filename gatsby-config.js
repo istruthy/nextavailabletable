@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Next Available Table`,
-    description: `Helping you fill your tables with predictability and ease.`,
+    description: `Simple text based table reservations for anyone. Helping you fill your tables with predictability and ease.`,
     author: `Next Available Table`,
   },
   plugins: [
