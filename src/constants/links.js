@@ -1,6 +1,6 @@
 export default [
   {
-    path: "#about",
+    path: "#intro",
     text: "about",
   },
   {
