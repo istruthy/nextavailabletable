@@ -6,6 +6,7 @@ import Intro from "../components/globals/Intro"
 import About from "../components/globals/About"
 import Process from "../components/globals/Process"
 // import Price from "../components/globals/Price"
+
 import Contact from "../components/globals/Contact"
 
 import "./layout.css"
