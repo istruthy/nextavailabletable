@@ -94,7 +94,7 @@ function Contact() {
             <div className="contact__title-right">We’re launching soon</div>
             <div className="contact__subtext-right">
               Sign-up to get notified when <span>nextavailabletable</span> is
-              ready to launch
+              ready to launch.
             </div>
           </article>
         </div>
@@ -139,7 +139,7 @@ const SectionWrapper = styled.section`
     background: transparent;
     border: none;
     border-bottom: 0.05rem solid var(--white);
-    font-size: 2rem;
+    font-size: 1.3rem;
     padding: 0.25rem 0;
     color: var(--grey);
     outline: none;
@@ -204,18 +204,22 @@ const SectionWrapper = styled.section`
 
   @media (min-width: 768px) {
     .contact__title-right {
-      width: 69%;
-      font-size: 4rem;
+      width: 58%;
+      font-size: 3rem;
     }
     .contact__subtext-right {
-      font-size: 2rem;
-      width: 69%;
+      font-size: 1.4rem;
+      width: 58%;
       color: var(--white);
     }
 
     .contact__subtext-right span {
       color: var(--grey);
-      font-size: 2rem;
+      font-size: 1.4rem;
+    }
+    .contact__title {
+      font-weight: 300;
+      font-size: 3rem;
     }
   }
 `
