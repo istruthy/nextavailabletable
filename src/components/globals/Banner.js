@@ -47,7 +47,7 @@ const BannerWrapper = styled.header`
     text-align: center;
     font-size: 5rem;
     text-transform: lowercase;
-    font-weight: 100;
+    font-weight: 200;
     color: var(--white);
   }
 

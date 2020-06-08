@@ -80,14 +80,14 @@ const SectionWrapper = styled.section`
 
   .intro__info-link {
     display: inline-block;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     padding: 0.5rem 2.5rem;
     text-decoration: none;
     margin: 1.75rem 0rem;
     color: var(--black);
     border: 0.2rem solid var(--black);
     transition: all 1s ease;
-    font-weight: 200;
+    font-weight: 300;
     width: 100%;
     text-align: center;
     position: relative;
